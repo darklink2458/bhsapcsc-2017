@@ -58,14 +58,6 @@
     <!-- ios splash -->
     <splash src="images/Default-568h@2x.png" platform="ios" width="640" height="1136" />
     
-    <!-- Android splash -->
-    <splash src="images/Default-568h@2x.png" platform="android" qualifier="ldpi" />
-    <splash src="images/Default-568h@2x.png" platform="android" qualifier="mdpi" />
-    <splash src="images/Default-568h@2x.png" platform="android" qualifier="hdpi" />
-    <splash src="images/Default-568h@2x.png" platform="android" qualifier="xhdpi" />
-    <splash src="images/Default-568h@2x.png" platform="android" qualifier="xxhdpi" />
-    <splash src="images/Default-568h@2x.png" platform="android" qualifier="xxxhdpi" />
-
     
     <!-- Android icon -->
     <icon src="ldpi.png" platform="android" qualifier="ldpi" />
@@ -74,6 +66,15 @@
     <icon src="xhdpi.png" platform="android" qualifier="xhdpi" />
     <icon src="xxhdpi.png" platform="android" qualifier="xxhdpi" />
     <icon src="xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
+    
+    <!-- Android splash -->
+    <splash src="images/splashldpi.png" platform="android" qualifier="ldpi" />
+    <splash src="images/splashmdpi.png" platform="android" qualifier="mdpi" />
+    <splash src="images/splashhdpi.png" platform="android" qualifier="hdpi" />
+    <splash src="images/splasxmdpi.png" platform="android" qualifier="xhdpi" />
+    <splash src="images/Default-568h@2x.png" platform="android" qualifier="xxhdpi" />
+    <splash src="images/Default-568h@2x.png" platform="android" qualifier="xxxhdpi" />
+
     
     <!-- Kirk Add's and update 1 -->
     <!-- Core plugins -->
