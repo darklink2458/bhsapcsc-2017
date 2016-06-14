@@ -73,7 +73,7 @@
                     
                     //listens for you to press the ENTER key, at which point your web address will change to the one you have input in the search box
                     if (e.keyCode == 13) {
-                        var urltocall = "https://www.askbys.com/askbysmobile/MobileWPSearchwithitem.php?search=" + inputTextValue;
+                        var urltocall = "https://askbys.org/askbysmobile/MobileWPSearchwithitem.php?search=" + inputTextValue;
                         loadJSONP( urltocall, 'mycallback' );
                         inputTextValue = "";
                     }
