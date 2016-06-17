@@ -62,7 +62,7 @@
                 <!--buttons-->
                 <div align="center">
                     <img src="images/Twitterbird.png" height="30" width="30" onclick="goGetWordPressForm('http://twitter.com/askbysorg','twitter')"> &nbsp; &nbsp;
-                    <img src="images/Transparent-Facebook-Logo-Icon.png" height="30" width="30" onclick="goGetWordPressForm('https://www.facebook.com/600914096651234','fb')">  &nbsp; &nbsp;
+                    <img src="images/Transparent-Facebook-Logo-Icon.png" height="30" width="30" onclick="goGetWordPressForm('https://www.facebook.com/askbysorg/','fb')">  &nbsp; &nbsp;
                     <a href="tel:206-707-6388"> <img src="images/MetroUI_Phone.png" height="30" width="30"></a> &nbsp; &nbsp;
                     <img src="images/Google Calendar.png" height="30" width="30" onclick="goGetWordPressForm('https://calendar.google.com/calendar/embed?src=bainbridgeyouthservices.org_m3jggmmcc9r6abmi6smr8ik0bs%40group.calendar.google.com&ctz=America/Los_Angeles&mode=AGENDA','none')">
                         &nbsp; &nbsp;
@@ -174,6 +174,7 @@
                 //Kirk trying something new
                 appPresentUrl.fb = "https://www.facebook.com/askbysorg/";
                 appAbsentUrl.fb = "https://www.facebook.com/askbysorg/";
+                checkAppSupport(["twitter"],appPresentUrl,appAbsentUrl,appCheck);
             }
             else if(navigator.userAgent.match(/Android/i))
             {
@@ -184,8 +185,9 @@
                 //Still not sure what the corrrect fb link to app is... May need to use intents
                 appPresentUrl.fb = "fb://page/600914096651234";
                 appAbsentUrl.fb = "https://www.facebook.com/600914096651234";
+                checkAppSupport(["twitter","fb"],appPresentUrl,appAbsentUrl,appCheck);
             }
-            checkAppSupport(["twitter","fb"],appPresentUrl,appAbsentUrl,appCheck);
+            
         }
         
         document.addEventListener('deviceready', onDeviceReady, false);
