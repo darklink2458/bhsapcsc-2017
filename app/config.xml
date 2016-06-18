@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id = "org.bainbridgeyouthservices.askbys"
-    version = "1.80">
+    version = "1.81">
     
     <name>askBYS</name>
     
@@ -56,8 +56,11 @@
     <!-- iPhone 5 / iPod Touch (5th Generation) -->
     
     <!-- ios splash -->
+    <splash src="images/splashios320x480.png" platform="ios" width="320" height="480" />
+    <splash src="images/splashios640x960.png" platform="ios" width="640" height="960" />
     <splash src="images/Default-568h@2x.png" platform="ios" width="640" height="1136" />
-    
+    <splash src="images/splashios750x1334.png" platform="ios" width="750" height="1334" />
+    <splash src="images/splashios1242x2208" platform="ios" width="1242" height="2208" />
     
     <!-- Android icon -->
     <icon src="ldpi.png" platform="android" qualifier="ldpi" />
@@ -68,12 +71,15 @@
     <icon src="xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
     
     <!-- Android splash -->
-    <splash src="images/splashldpi.png" platform="android" qualifier="ldpi" />
-    <splash src="images/splashmdpi.png" platform="android" qualifier="mdpi" />
-    <splash src="images/splashhdpi.png" platform="android" qualifier="hdpi" />
-    <splash src="images/splasxmdpi.png" platform="android" qualifier="xhdpi" />
-    <splash src="images/Default-568h@2x.png" platform="android" qualifier="xxhdpi" />
-    <splash src="images/Default-568h@2x.png" platform="android" qualifier="xxxhdpi" />
+    <splash src="images/splashldpi.png" platform="android" qualifier="port-ldpi" />
+    <splash src="images/splashmdpi.png" platform="android" qualifier="port-mdpi" />
+    <splash src="images/splashhdpi.png" platform="android" qualifier="port-hdpi" />
+    <splash src="images/splashxdpi.png" platform="android" qualifier="port-xhdpi" />
+    <splash src="images/splashxxdpi.png" platform="android" qualifier="port-xxhdpi" />
+    <splash src="images/splashxxxdpi.png" platform="android" qualifier="port-xxxhdpi" />
+    
+    <!-- default splash -->
+    <gap:splash src="images/Newsplash.png" />
 
     
     <!-- Kirk Add's and update 1 -->
@@ -99,18 +105,26 @@
      <gap:plugin name="org.apache.cordova.vibration" />
      
      -->
-    <gap:plugin name="com.phonegap.plugin.statusbar" />
+
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-disable-nsapptransportsecurity" source="npm" />
     
-    <!-- Third party plugins -->
-    
+    <!-- Third party plugins - do we still need this?
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" onload="true" />
     </feature>
     
     <preference name="StatusBarOverlaysWebView" value="false" />
+    Instead try this:
+     -->
+    <preference name="ios-statusbarstyle" value="default" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="FadeSplashScreen " value="true" />
+
+    
     
     <!-- from here: https://github.com/jessemonroy650/top-phonegap-mistakes/blob/master/the-whitelist-system.md
      -->
