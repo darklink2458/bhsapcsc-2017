@@ -23,6 +23,7 @@
             
             
             <div data-role="content" data-theme="a">
+                <br>
                 
                 <a href="#myPanel" > <i class="fa fa-bars"></i> </a>
                 
@@ -72,6 +73,7 @@
                     
                     <!--Panel-->
                     <div data-role="panel" id="myPanel">
+                        <br>
                         <div align=“center”>
                             <img src="images/askbys.png" width="60%">
                         </div>
@@ -172,8 +174,8 @@
                 appCheck.fb = "facebook://";
                 //appPresentUrl.fb = "fb://page/600914096651234"; May not work with ios 9
                 //Kirk trying something new
-                appPresentUrl.fb = "https://www.facebook.com/askbysorg/";
-                appAbsentUrl.fb = "https://www.facebook.com/askbysorg/";
+                appPresentUrl.fb = "https://www.facebook.com/230144303829183";
+                appAbsentUrl.fb = "https://www.facebook.com/230144303829183";
                 checkAppSupport(["twitter"],appPresentUrl,appAbsentUrl,appCheck);
             }
             else if(navigator.userAgent.match(/Android/i))
@@ -183,8 +185,8 @@
                 appAbsentUrl.twitter = "http://mobile.twitter.com/askbysorg";
                 appCheck.fb = "com.facebook.katana";
                 //Still not sure what the corrrect fb link to app is... May need to use intents
-                appPresentUrl.fb = "fb://page/600914096651234";
-                appAbsentUrl.fb = "https://www.facebook.com/600914096651234";
+                appPresentUrl.fb = "fb://page/230144303829183";
+                appAbsentUrl.fb = "https://www.facebook.com/230144303829183";
                 checkAppSupport(["twitter","fb"],appPresentUrl,appAbsentUrl,appCheck);
             }
             
