@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id = "org.bainbridgeyouthservices.askbys"
-    version = "1.90">
+    version = "1.91">
     
     <name>askBYS</name>
     
@@ -118,7 +118,10 @@
      </feature>
 
      -->
-    
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
+
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="ios-statusbarstyle" value="default" />
     <preference name="show-splash-screen-spinner" value="true" />
@@ -127,7 +130,6 @@
     
     <preference name="TopActivityIndicator" value="white" />
     <preference name="KeyboardShrinksView " value="true" />
-    <preference name="BackgroundColor" value="0x000000" />
 
     
     
