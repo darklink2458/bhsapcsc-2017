@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id = "org.bainbridgeyouthservices.askbys"
-    version = "1.83">
+    version = "1.84">
     
     <name>askBYS</name>
     
@@ -105,26 +105,24 @@
      <gap:plugin name="org.apache.cordova.vibration" />
      
      -->
-
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-disable-nsapptransportsecurity" source="npm" />
     
     <!-- Built-in plug-in, not sure it works, going back to the other one
       <preference name="ios-statusbarstyle" value="default" />
-    <gap:plugin name="com.phonegap.plugin.statusbar" />
-        Instead try this:
-     -->
-    <feature name="StatusBar">
-        <param name="ios-package" value="CDVStatusBar" onload="true" />
-    </feature>
-    
-    <preference name="StatusBarOverlaysWebView" value="false" />
+            Instead try this:
+     <feature name="StatusBar">
+     <param name="ios-package" value="CDVStatusBar" onload="true" />
+     </feature>
 
+     -->
+    
+    <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="FadeSplashScreen " value="true" />
-    <preference name="StatusBarOverlaysWebView" value="false" />
 
     
     
