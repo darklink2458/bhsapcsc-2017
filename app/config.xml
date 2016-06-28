@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id = "org.bainbridgeyouthservices.askbys"
-    version = "1.91">
+    version = "1.92">
     
     <name>askBYS</name>
     
@@ -115,21 +115,16 @@
             Instead try this:
      <feature name="StatusBar">
      <param name="ios-package" value="CDVStatusBar" onload="true" />
+     <preference name="StatusBarOverlaysWebView" value="false" />
+
      </feature>
 
      -->
-    <feature name="StatusBar">
-        <param name="ios-package" value="CDVStatusBar" onload="true" />
-    </feature>
-
-    <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="ios-statusbarstyle" value="default" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="FadeSplashScreen " value="true" />
-    
-    <preference name="TopActivityIndicator" value="white" />
-    <preference name="KeyboardShrinksView " value="true" />
+    <preference name="KeyboardShrinksView " value="false" />
 
     
     
