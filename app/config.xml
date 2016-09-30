@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id = "org.bainbridgeyouthservices.askbys"
-    version = "2.00">
+    version = "2.01">
     
     <name>askBYS</name>
     
@@ -106,7 +106,7 @@
      
      -->
     
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <plugin name="cordova-plugin-inappbrowser" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-disable-nsapptransportsecurity" source="npm" />
     
